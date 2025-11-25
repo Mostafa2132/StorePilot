@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@theme {
+  /* Primary Colors - Indigo */
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-primary-light: #818cf8;
+  
+  /* Secondary Colors - Pink */
+  --color-secondary: #ec4899;
+  --color-secondary-dark: #db2777;
+  --color-secondary-light: #f472b6;
+  
+  /* Accent Colors - Emerald */
+  --color-accent: #10b981;
+  --color-accent-dark: #059669;
+  --color-accent-light: #34d399;
+  
+  /* Neutral Colors - Light Mode */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-dark: #f1f5f9;
+  
+  /* Text Colors - Light Mode */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-text-light: #94a3b8;
+  
+  /* Border & Divider - Light Mode */
+  --color-border: #e2e8f0;
+  --color-divider: #cbd5e1;
+  
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Gradient Text Color */
+  --color-gradient-text: #6366f1;
+  
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+}
+
+/* Dark Mode Theme Variables */
+.dark {
+  /* Neutral Colors - Dark Mode */
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-surface-dark: #334155;
+  
+  /* Text Colors - Dark Mode */
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-light: #94a3b8;
+  
+  /* Border & Divider - Dark Mode */
+  --color-border: #334155;
+  --color-divider: #475569;
+  
+  /* Primary Colors - Brighter for dark mode */
+  --color-primary: #818cf8;
+  --color-primary-dark: #6366f1;
+  --color-primary-light: #a5b4fc;
+  
+  /* Secondary Colors - Brighter for dark mode */
+  --color-secondary: #f472b6;
+  --color-secondary-dark: #ec4899;
+  --color-secondary-light: #f9a8d4;
+  
+  /* Accent Colors - Brighter for dark mode */
+  --color-accent: #34d399;
+  --color-accent-dark: #10b981;
+  --color-accent-light: #6ee7b7;
+  
+  /* Gradient Text Color - Brighter for dark mode */
+  --color-gradient-text: #818cf8;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-background);
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 4px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Permanent Marker";
+
+}
+
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
