@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Heart, ShoppingCart, Trash2, Star, HeartOff } from "lucide-react";
 import { useCart } from "../../Context/CartProvider/CartProvider";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 export default function Wishlist() {
   const {
@@ -85,15 +86,15 @@ export default function Wishlist() {
             Start adding products you love to your wishlist and never lose track
             of them!
           </p>
-          <motion.a
-            href="/products"
+          <Link
+            to="/"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition-colors"
           >
             <Heart className="w-5 h-5" />
             Discover Products
-          </motion.a>
+          </Link>
         </div>
       </motion.div>
     );
