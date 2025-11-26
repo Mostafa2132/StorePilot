@@ -43,7 +43,7 @@ function SubNavbar() {
   return (
     // 📌 nav بدل div عشان SEO + إضافة aria-label
     <nav
-      className="w-full border-b border-border fixed md:top-12 top-15  left-0 z-40"
+      className="w-full border-b border-border fixed md:top-12 top-13  left-0 z-40"
       aria-label="Main navigation with categories, search, wishlist and cart"
     >
       <div className="w-full mx-auto bg-background py-3 px-6 flex items-center justify-between">
