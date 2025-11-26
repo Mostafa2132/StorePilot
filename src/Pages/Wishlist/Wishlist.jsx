@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, ShoppingCart, Trash2, Star, HeartOff } from "lucide-react";
 import { useCart } from "../../Context/CartProvider/CartProvider";
+import { Helmet } from "react-helmet";
 
 export default function Wishlist() {
   const {

@@ -8,6 +8,7 @@ import {
   PackageX,
 } from "lucide-react";
 import { useCart } from "../../Context/CartProvider/CartProvider";
+import { Helmet } from "react-helmet";
 
 export default function Cart() {
   const {
