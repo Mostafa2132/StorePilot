@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Heart, MoonStar, Search, ShoppingCart } from "lucide-react";
+import { Heart, MoonStar, Search, ShoppingCart, SunDim } from "lucide-react";
 import { useRef, useState, memo, useEffect } from "react";
 
 import { Link } from "react-router-dom";
@@ -60,7 +60,7 @@ function SubNavbar() {
             className="size-9.5 flex justify-center items-center rounded-xl border border-border text-text-primary hover:bg-surface hover:text-primary transition-colors"
             aria-label="Toggle dark mode"
           >
-            <MoonStar className="w-4 h-4" />
+            {darkMode ? <SunDim className="w-4 h-4"/> : <MoonStar className="w-4 h-4" />}
           </button>
         </div>
 
